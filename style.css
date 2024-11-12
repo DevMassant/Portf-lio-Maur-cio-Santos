@@ -88,3 +88,27 @@ form {
 @media (min-width: 577px) and (max-width: 768px) {
   /* Estilos para tablets */
 }
+
+@media (orientation: portrait) {
+  /* Estilos para dispositivos em modo retrato */
+  .image {
+    width: 100%;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  /* Estilos para dispositivos com alta resolução */
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas menores que 768px */
+  body {
+    font-size: 14px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
