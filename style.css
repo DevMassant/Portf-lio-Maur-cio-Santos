@@ -136,17 +136,3 @@ form {
     width: 90%;
   }
 }
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column; 
-  }
-
-  section {
-    padding: 20px; 
-  }
-
-  #Sobre img {
-    width: 100%; 
-  }
-}
