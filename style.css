@@ -56,7 +56,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 150px;
+  padding: 250px;
 }
 
 #Sobre h1.sobre {
@@ -90,7 +90,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px;
+  padding: 250px;
 }
 
 #Portfólio {
@@ -106,7 +106,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 150px;
+  padding: 250px;
 }
 
 h1 {
@@ -138,17 +138,15 @@ form {
 }
 
 @media (max-width: 768px) {
-  /* Estilos específicos para telas com largura máxima de 768px (tablets e smartphones) */
   nav {
-    flex-direction: column; /* Empilha os itens do menu verticalmente */
-    /* ... outros estilos específicos para dispositivos móveis */
+    flex-direction: column; 
   }
 
   section {
-    padding: 20px; /* Ajuste o espaçamento interno das seções */
+    padding: 20px; 
   }
 
   #Sobre img {
-    width: 100%; /* Faça a imagem se ajustar à largura total do container */
+    width: 100%; 
   }
 }
