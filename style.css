@@ -136,3 +136,19 @@ form {
     width: 90%;
   }
 }
+
+@media (max-width: 768px) {
+  /* Estilos específicos para telas com largura máxima de 768px (tablets e smartphones) */
+  nav {
+    flex-direction: column; /* Empilha os itens do menu verticalmente */
+    /* ... outros estilos específicos para dispositivos móveis */
+  }
+
+  section {
+    padding: 20px; /* Ajuste o espaçamento interno das seções */
+  }
+
+  #Sobre img {
+    width: 100%; /* Faça a imagem se ajustar à largura total do container */
+  }
+}
