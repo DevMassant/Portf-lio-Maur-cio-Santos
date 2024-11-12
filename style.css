@@ -1,0 +1,138 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.56);
+  padding: 15px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+section {
+  margin-top: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Sobre {
+  background-color: #dfe4e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px;
+}
+
+#Sobre h1.sobre {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#Sobre .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 100px;
+}
+
+#Sobre img {
+  width: 180px;
+  border-radius: 90%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.56);
+}
+
+#Sobre img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; 
+
+}
+
+
+#Formação {
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px;
+}
+
+#Portfólio {
+  background-color: #dfe4e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 250px;
+}
+
+#Contato {
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px;
+}
+
+h1 {
+  color: #0b0b0b;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #dfe4e8;
+  box-shadow: 0 19px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 10px;
+    margin-top: 40px;
+  }
+  form {
+    width: 90%;
+  }
+}
