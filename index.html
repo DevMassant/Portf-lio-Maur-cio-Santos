@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.8">
   <title>Portfólio Pessoal | Mauricio Santos Silva</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,23 +21,20 @@
       <h1 class="sobre">SOBRE MIM</h1>
       <div class="content">
         <img src="minha-foto.jfif" alt="Minha foto" srcset="minha-foto-small.jfif 400w, minha-foto.jfif 800w">
-        <p>Olá. Tudo bem? <Br> Me chamo Mauricio Santos Silva. <Br> Tenho 24 anos.<Br>  Gosto de ler e assistir filmes.</p>
-      </div>
+        <p> Me chamo Mauricio Santos Silva <br> Tenho 24 anos <br> Gosto de ler e assistir filmes </p>
+      </div>    
     </section>
     </div>
     <div>
       <section id="Formação">
         <h1>Formação</h1>
-        <p>Cursando <b>Análise e Desenvolvimento de Sistemas</b> pela UNINTER! 
-          <br> Cursando <b>Inglês NEW UBEST</b> pela UNINTER
-          <br> Nível básico de <b>Espanhol</b>
-        </p>
+          <p>Cursando Analise e Desenvolvimento de Sistemas pela UNINTER <br> Cursando Inglês NEW UBEST pela UNINTER <br> Nível básico de Espanhol</p>
       </section>
     </div>
     <div>
       <section id="Portfólio">
         <h1>Portfólio</h1>
-        <p>Em breve, você poderá conferir meus projetos aqui.</p>
+        <p>Em breve, você poderá conferir meus projetos aqui!</p>
       </section>
     </div>
     <div>
@@ -52,8 +49,32 @@
           <textarea id="mensagem" name="mensagem"
             rows="3" required></textarea>
           <button type="submit">Enviar</button>
-
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Sua mensagem foi enviada com sucesso!</p>
+            </div>
+          </div>     
         </form>
+        <script>
+            const form = document.querySelector('form');
+            const modal = document.getElementById('modal');
+            const span = document.getElementsByClassName("close")[0];
+            form.addEventListener('submit', (event) => {
+              event.preventDefault();
+              console.log('Formulário enviado:', form.elements);
+              modal.style.display = "block";
+              form.reset();
+            });
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) 
+                modal.style.display = "none";
+              }
+
+        </script>
       </section>
     </div>
   </main>
