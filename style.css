@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* MUDANÇA DE FONTE */
 @font-face {
   font-family: 'lulocleanw01-oneboldregular';
   src: url('lulo_clean_w01_one_bold-webfont.woff2') format('woff2'),
@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   min-height: 500px;
 }
-
+/* DIVISÕES DO SITE  */
 nav {
   position: fixed;
   top: 0;
@@ -58,7 +58,7 @@ section {
   flex-direction: column;
   align-items: center;
 }
-
+/* AREA DE SOBRE */
 #Sobre {
   background-color: #dfe4e8;
   display: flex;
@@ -92,15 +92,18 @@ section {
 
 }
 
-
+/* AREA DE FORMAÇÃO */
 #Formação {
   background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 250px;
+  text-align: center;
+  margin-top: 20px;
 }
 
+/* AREA DE PORTFOLIO */
 #Portfólio {
   background-color: #dfe4e8;
   display: flex;
@@ -109,19 +112,66 @@ section {
   padding: 250px;
 }
 
-#Contato {
-  background-color: #fdfdfd;
+/* CSS USADO PARA APRESENTAR MEU PROJETO */
+.portfolio-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 250px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
-h1 {
-  color: #0b0b0b;
-  margin-bottom: 20px;
+.card {
+  flex: 0 0 295px;
+  height: 200px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 
+.card img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+
+}
+#texto-centralizado {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* CSS DE BOTÃO DE ACESSO */
+.btn-link {
+  background-color: #dfe4e8; 
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align:  
+  center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.56);
+  font-size: 16px;
+  margin-top: 10px; 
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.btn-link:hover {
+  transform: scale(1.1);
+}
+
+/* AREA DE CONTATO */
+#Contato {
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 250px;
+  }
+  
+/* CSS DO FORMULÁRIO */
 form {
   display: flex;
   flex-direction: column;
@@ -170,6 +220,15 @@ form {
   text-decoration: none;
   cursor: pointer;
 }
+/* CSS DO RODAPÉ DO SITE */
+footer {
+  text-align: center;
+  font-size: 8px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* MEDIAS USADAS PARA CADA TIPO DE DISPOSITIVO */
 
 @media (max-width: 768px) {
   section {
